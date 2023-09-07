@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  width: 273px;
+  height: 91px;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid rgba(223, 230, 235, 0.5);
+  padding: 14px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card:hover {
+  border: 1px solid rgba(223, 230, 235, 1);
+  box-sizing: border-box;
+}
+
+.cardWrapper {
+  display: flex;
+}
+
+.cardWrapper > img {
+  width: 54px;
+}
+
+.cardContent {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: rgba(132, 148, 161, 1);
+  margin-left: 10px;
+}
+
+.cardContent > h4 {
+  font-size: 14px;
+  margin: 5px 0 5px 0;
+}
+
+.cardContent > h5 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.cardButton {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}

@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 70px 20px 50px;
+}
+
+.headerBlock {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  display: flex;
+}
+
+.headerLogo > img:first-child {
+  margin-right: 20px;
+}
+
+.headerLogo > select {
+  margin-left: 16px;
+  border: none;
+}
+
+.headerAccount {
+  display: flex;
+  align-items: center;
+}
+
+.headerAccount > p {
+  margin-right: 10px;
+}
+
+.headerAccount > img:not(:last-child) {
+  margin-right: 20px;
+}
+
+.accountSelect {
+  border: none;
+}
+
+.accountSelect > option {
+  display: flex;
+}
+
+.accountSelect > option > img {
+  width: 10px;
+}
+
+hr {
+  margin: 0;
+  color: rgba(223, 230, 235, 0.5);
+}

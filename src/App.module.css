@@ -1,0 +1,52 @@
+.mainBlock {
+  display: grid;
+  grid-template-columns: 320px auto;
+}
+
+.leftBlock {
+  padding: 12px 50px 10px 30px;
+  box-sizing: border-box;
+}
+
+.leftBlock > h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: rgba(33, 33, 33, 1);
+}
+
+.leftBlock > h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(33, 33, 33, 1);
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.cardsBlock {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 273px 273px 273px;
+  grid-gap: 30px;
+}
+
+.buttonWrap {
+  margin-top: 40px;
+}
+
+.buttonSave {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  width: 279px;
+  height: 40px;
+  background-color: rgba(61, 171, 247, 1);
+  border: none;
+  border-radius: 10px;
+}
