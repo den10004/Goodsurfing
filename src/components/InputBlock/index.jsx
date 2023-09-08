@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import { Context } from "../../context";
 import styles from "./InputBlock.module.css";
 
-function InputBlock({ onAdd, email, setEmail }) {
+function InputBlock({ onAdd, email, setEmail, fil }) {
   const { emailDataForm, setEmailDataForm } = useContext(Context);
 
   const handleOnSubmit = (e) => {
@@ -18,6 +18,8 @@ function InputBlock({ onAdd, email, setEmail }) {
     }
   }, [emailDataForm]);
 
+  const isMatcheEmail = fil.some((e) => e.email === email);
+
   return (
     <div className={styles.inputBlock}>
       <form onSubmit={handleOnSubmit}>
@@ -25,6 +27,7 @@ function InputBlock({ onAdd, email, setEmail }) {
           <label>Введите e-mail участника</label>
           <input
             placeholder="Email"
+            type="text"
             name="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
@@ -34,7 +37,7 @@ function InputBlock({ onAdd, email, setEmail }) {
         <button
           className={[styles.inputButton]}
           onSubmit={handleOnSubmit}
-          disabled={!email}
+          disabled={!isMatcheEmail}
         >
           + Добавить участника
         </button>

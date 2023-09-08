@@ -96,7 +96,12 @@ function App() {
             организации, добавляя их адреса электронной почты. У них должна быть
             учетная запись на сайте.
           </h3>
-          <InputBlock onAdd={onAdd} email={email} setEmail={setEmail} />
+          <InputBlock
+            onAdd={onAdd}
+            email={email}
+            setEmail={setEmail}
+            fil={fil}
+          />
 
           <div className={styles.cardsBlock}>
             {fil.map((user, i) => (

@@ -40,3 +40,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.inputButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
