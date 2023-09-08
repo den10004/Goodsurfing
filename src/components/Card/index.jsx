@@ -4,7 +4,7 @@ import styles from "./Card.module.css";
 import logoAcc from "../../assets/logoAcc.svg";
 import deleteButton from "../../assets/delete.png";
 
-function Card({ id, name, email, onDelete, filtereds, setFiltereds }) {
+function Card({ id, name, email, city, onDelete }) {
   const getEmailData = useRef();
   const getName = useRef();
   const getCity = useRef();
@@ -18,6 +18,7 @@ function Card({ id, name, email, onDelete, filtereds, setFiltereds }) {
     const x = {
       name: getEmailData.current.textContent,
       email: getName.current.textContent,
+      city: getCity.current.textContent,
       idx: Math.floor(Math.random() * 98) + 2,
     };
     setEmailDataForm(x);
@@ -28,9 +29,10 @@ function Card({ id, name, email, onDelete, filtereds, setFiltereds }) {
       <div onClick={emailData} className={styles.cardWrapper}>
         <img src={logoAcc} alt="photo" />
         <div className={styles.cardContent}>
-          <h5 ref={getEmailData}>{email}</h5>
-          <h4 ref={getName}>{name}</h4>
-          {/* <h4 ref={getCity}>{city}</h4>*/}
+          <h4>Участник</h4>
+          <h5 ref={getName}>{name}</h5>
+          <p ref={getEmailData}>{email}</p>
+          <h4 ref={getCity}>{city}</h4>
         </div>
       </div>
 

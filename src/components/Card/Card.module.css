@@ -35,14 +35,14 @@
 }
 
 .cardContent > h4 {
-  font-size: 14px;
-  margin: 5px 0 5px 0;
-  color: black;
+  font-size: 12px;
+  margin: 5px 0 0px 0;
+  color: rgba(132, 148, 161, 1);
 }
 
 .cardContent > h5 {
-  font-size: 12px;
-  color: rgba(132, 148, 161, 1);
+  font-size: 14px;
+  color: black;
   margin: 0;
 }
 

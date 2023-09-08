@@ -31,6 +31,7 @@ function App() {
       method: "POST",
       body: JSON.stringify({
         name: emailDataForm.email,
+        city: emailDataForm.city,
         email: emailDataForm.name,
         idx: emailDataForm.idx,
       }),
@@ -105,7 +106,13 @@ function App() {
 
           <div className={styles.cardsBlock}>
             {fil.map((user, i) => (
-              <Cards id={user.id} key={i} name={user.name} email={user.email} />
+              <Cards
+                id={user.id}
+                key={i}
+                name={user.name}
+                email={user.email}
+                city={user.address.city}
+              />
             ))}
           </div>
 
@@ -118,6 +125,7 @@ function App() {
                 key={i}
                 name={user.name}
                 email={user.email}
+                city={user.city}
                 filtereds={filtereds}
                 setFiltereds={setFiltereds}
                 onDelete={onDelete}
