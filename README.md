@@ -8,4 +8,4 @@
 4. Сохранение списка и вывод в консоль.
 
 [GitHub](https://github.com/den10004/Goodsurfing.git).
-[Деплой на Vercel](https://goodsurfing-9t2mebu92-denis-sergeev-85.vercel.app/).
+[Деплой на Vercel](https://goodsurfing-git-main-denis-sergeev-85.vercel.app/).
