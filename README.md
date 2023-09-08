@@ -1,5 +1,11 @@
-# ТЗ на react.js
+# Тестовое задание на react.js
 
-https://github.com/den10004/Goodsurfing.git
+## Реализовано:
 
-https://goodsurfing-9t2mebu92-denis-sergeev-85.vercel.app/
+1. Поиск участников по массиву, если участник не найден, то кнопка блокируется
+2. Выбор участников и добавление их в список.
+3. Удаление участников из списка.
+4. Сохранение списка и вывод в консоль.
+
+[GitHub](https://github.com/den10004/Goodsurfing.git).
+[Деплой на Vercel](https://goodsurfing-9t2mebu92-denis-sergeev-85.vercel.app/).
