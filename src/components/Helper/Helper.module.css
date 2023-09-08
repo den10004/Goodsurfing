@@ -1,0 +1,49 @@
+.helper {
+  width: 246px;
+  height: 264px;
+  border-radius: 10px;
+  border: 1px solid #8494a1;
+  margin-top: 70px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #8494a1;
+}
+
+.helper > img {
+  width: 65px;
+}
+
+.helper > h4 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+.helper > p {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  line-height: 16px;
+}
+
+.helper > h5 {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 12px 0 0 0;
+}
+
+.helper > button {
+  width: 206px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #3dabf7;
+  padding: 10px, 50px, 10px, 50px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3dabf7;
+  margin-top: 20px;
+}

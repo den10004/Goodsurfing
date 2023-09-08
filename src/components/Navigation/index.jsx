@@ -6,6 +6,7 @@ import host from "../../assets/host.png";
 import vector from "../../assets/Vector.png";
 
 import styles from "./Navigation.module.css";
+import Helper from "../Helper";
 
 function Navigation() {
   return (
@@ -52,6 +53,8 @@ function Navigation() {
         <button className={styles.navigationButton}>
           <img src={vector} alt="назад" />
         </button>
+
+        <Helper />
       </ul>
     </div>
   );
