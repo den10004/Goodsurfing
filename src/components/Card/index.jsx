@@ -7,6 +7,7 @@ import deleteButton from "../../assets/delete.png";
 function Card({ id, name, email, onDelete, filtereds, setFiltereds }) {
   const getEmailData = useRef();
   const getName = useRef();
+  const getCity = useRef();
   const { setEmailDataForm } = useContext(Context);
 
   const deleteCard = (name) => {
@@ -29,6 +30,7 @@ function Card({ id, name, email, onDelete, filtereds, setFiltereds }) {
         <div className={styles.cardContent}>
           <h5 ref={getEmailData}>{email}</h5>
           <h4 ref={getName}>{name}</h4>
+          {/* <h4 ref={getCity}>{city}</h4>*/}
         </div>
       </div>
 
